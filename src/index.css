@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 10%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
