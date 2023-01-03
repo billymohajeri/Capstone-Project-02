@@ -1,4 +1,6 @@
 import './index.css';
-import getShows from './modules/getShows.js';
+import displayShows from './modules/display';
+import getShows from './modules/getShows';
 
 getShows();
+displayShows();
