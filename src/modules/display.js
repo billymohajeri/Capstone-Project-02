@@ -17,13 +17,15 @@ const displayShows = async () => {
       <div class="movie-info">
         <p class="movie-title">${movie['#TITLE']}</p>
         <div class="likes">
-          <i class="fa-solid fa-heart"></i>
-          <span id="count-like">1</span>
+          <i class="fa-regular fa-heart fa-2xl"></i>
+          <i class="fa-regular fa-comment fa-2xl"></i>
+          <span id="count-like"></span>
+
         </div>
-        <button class="comment">Comments</button>
-      </div>
-    </div>`;
+        </div>
+        </div>`;
     movies.appendChild(movieTiles);
+    // <button class="comment">Comments</button>
   });
   const itemCount = document.querySelector('.item-count');
   itemCount.innerHTML = `${data.description.length} movies are currently displaying`;
