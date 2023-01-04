@@ -13,13 +13,31 @@ body {
   justify-content: space-evenly;
 }
 
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-tiles {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  margin: 2.5px;
+  color: white;
+  background-color: #1f1f50;
+}
+
+.movie-image img {
+  width: 100%;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   border: black 2px solid;
   position: absolute;
-  bottom: 0;
   width: 100%;
   height: 2.5rem;
 }
