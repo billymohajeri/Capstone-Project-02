@@ -29,6 +29,8 @@ const displayShows = async () => {
   });
   const itemCount = document.querySelector('.item-count');
   itemCount.innerHTML = `${data.description.length} movies are currently displaying`;
+  return data.description;
 };
 
 export default displayShows;
+
