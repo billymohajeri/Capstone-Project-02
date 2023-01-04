@@ -6,4 +6,3 @@ import displayComments from './modules/displayComments.js';
 getShows();
 displayShows();
 displayComments();
-
