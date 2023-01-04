@@ -7,6 +7,7 @@ const displayShows = async () => {
   movieCount.setNumber(data.description.length);
   const movies = document.querySelector('.movies');
   movies.innerHTML = '';
+  let idCounter = 1;
   data.description.forEach((movie) => {
     const movieTiles = document.createElement('div');
     movieTiles.innerHTML = `
@@ -17,16 +18,19 @@ const displayShows = async () => {
       <div class="movie-info">
         <p class="movie-title">${movie['#TITLE']}</p>
         <div class="likes">
-          <i class="fa-solid fa-heart"></i>
-          <span id="count-like">1</span>
+          <i class="fa-regular fa-heart fa-2xl"></i>
+          <i class="fa-regular fa-comment fa-2xl" id=${idCounter}></i>
+          <span id="count-like"></span>
+
         </div>
-        <button class="comment">Comments</button>
-      </div>
-    </div>`;
+        </div>
+        </div>`;
+    idCounter += 1;
     movies.appendChild(movieTiles);
   });
   const itemCount = document.querySelector('.item-count');
   itemCount.innerHTML = `${data.description.length} movies are currently displaying`;
+  return data.description;
 };
 
 export default displayShows;

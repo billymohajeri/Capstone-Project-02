@@ -13,6 +13,11 @@ body {
   justify-content: space-evenly;
 }
 
+.item-count {
+  font-size: larger;
+  text-align: center;
+}
+
 .movies {
   display: flex;
   flex-wrap: wrap;
@@ -20,10 +25,17 @@ body {
 }
 
 .movie-tiles {
+  text-align: center;
   width: 350px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0 54px 55px,
+    rgba(0, 0, 0, 0.12) 0 -12px 30px,
+    rgba(0, 0, 0, 0.12) 0 4px 6px,
+    rgba(0, 0, 0, 0.17) 0 12px 13px,
+    rgba(0, 0, 0, 0.09) 0 -3px 5px;
   margin: 2.5px;
+  padding-bottom: 5%;
   color: white;
   background-color: #1f1f50;
 }
@@ -40,4 +52,34 @@ footer {
   position: absolute;
   width: 100%;
   height: 2.5rem;
+}
+
+.likes {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.fa-2xl {
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.comment-popup {
+  width: 50%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  background-color: aliceblue;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.fa-xmark {
+  position: absolute;
+  top: 0%;
+  margin-top: 25px;
+  margin-left: -40px;
+  left: 100%;
+  cursor: pointer;
 }
