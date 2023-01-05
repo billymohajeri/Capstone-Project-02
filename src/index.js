@@ -7,4 +7,4 @@ import displayLikes from './modules/likes.js';
 getShows();
 displayShows();
 displayComments();
-displayLikes();
+// displayLikes();
