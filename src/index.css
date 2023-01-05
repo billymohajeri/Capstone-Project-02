@@ -2,10 +2,15 @@ body {
   box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
+  background-image: url('https://mcdn.wallpapersafari.com/medium/1/32/FpDfVZ.jpeg');
 }
 
 .logo {
   width: 10%;
+}
+
+h1 {
+  color: #ffd509;
 }
 
 .nav-bar {
@@ -16,6 +21,7 @@ body {
 .item-count {
   font-size: larger;
   text-align: center;
+  color: white;
 }
 
 .movies {
@@ -27,6 +33,7 @@ body {
 .movie-tiles {
   text-align: center;
   width: 350px;
+  height: 600px;
   border-radius: 10px;
   box-shadow:
     rgba(0, 0, 0, 0.25) 0 54px 55px,
@@ -64,7 +71,7 @@ footer {
   cursor: pointer;
 }
 
-.comment-popup {
+.popup {
   width: 50%;
   display: none;
   position: fixed;
