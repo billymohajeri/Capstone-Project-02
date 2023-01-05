@@ -1,6 +1,5 @@
-import { BASE_URL } from "./utils.js";
+import { BASE_URL } from './utils.js';
 
-const likeButton = document.getElementsByClassName("fa-heart");
 // likeButton.addEventListener('click', (e) => {
 //   console.log(likeButton);
 // // });
@@ -18,11 +17,18 @@ const likeButton = document.getElementsByClassName("fa-heart");
 // // Make an API request to retrieve the initial like count
 // const response = await fetch(`${BASE_URL}/likes/count `);
 // const data = await response.json();
+// const likeButton = document.getElementsByClassName('fa-heart');
 
 // likeButton.innerHTML = `Like (${data.likeCount})`;
 const displayLikes = async () => {
-    likeButton.addEventListener("click", async (event) => {
-      console.log('hello')
+  document.addEventListener('click', async (event) => {
+    if (event.target.classList.contains('fa-heart')) {
+      console.log('hello');
+    }
+
+    // const displayLikes = async () => {
+    // likeButton.addEventListener('click', async (event) => {
   });
 };
-displayLikes()
+
+export default displayLikes;
