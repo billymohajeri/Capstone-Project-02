@@ -42,9 +42,9 @@ const displayComments = async () => {
       commentCounter();
     }
     if (
-      event.target.classList.contains('cmt-btn') &&
-      textUsername.value &&
-      textComment.value
+      event.target.classList.contains('cmt-btn')
+      && textUsername.value
+      && textComment.value
     ) {
       await addComment(itemID, textUsername.value, textComment.value);
       textUsername.value = '';

@@ -6,7 +6,7 @@ const addComment = async (index, user, comment) => {
     reqBody = JSON.stringify({
       item_id: `item${index}`,
       username: user,
-      comment: comment,
+      comment,
     });
     const response = await fetch(`${BASE_URL}/comments`, {
       method: 'POST',
@@ -17,10 +17,11 @@ const addComment = async (index, user, comment) => {
     });
     const data = await response.text();
     if (data) {
-      location.reload();
+      window.location.reload();
     }
     return data || null;
   }
+  return true;
 };
 
 export default addComment;
