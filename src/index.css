@@ -35,11 +35,8 @@ h1 {
   width: 350px;
   height: 600px;
   border-radius: 10px;
-  box-shadow:
-    rgba(0, 0, 0, 0.25) 0 54px 55px,
-    rgba(0, 0, 0, 0.12) 0 -12px 30px,
-    rgba(0, 0, 0, 0.12) 0 4px 6px,
-    rgba(0, 0, 0, 0.17) 0 12px 13px,
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
+    rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px,
     rgba(0, 0, 0, 0.09) 0 -3px 5px;
   margin: 2.5px;
   padding-bottom: 5%;
@@ -53,12 +50,18 @@ h1 {
 
 footer {
   display: flex;
+  color: white;
   justify-content: center;
   align-items: center;
-  border: black 2px solid;
+  margin-top: 20px;
+  border: #ffd509 2px solid;
   position: absolute;
   width: 100%;
   height: 2.5rem;
+}
+
+a {
+  color: white;
 }
 
 .likes {
@@ -75,11 +78,27 @@ footer {
   width: 50%;
   display: none;
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 25%;
   background-color: aliceblue;
   border-radius: 25px;
   text-align: center;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 50%;
+  margin: 20px;
+}
+
+input[type='button'] {
+  margin-bottom: 10px;
 }
 
 .fa-xmark {

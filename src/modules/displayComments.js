@@ -1,6 +1,10 @@
 import { BASE_URL } from './utils.js';
 import commentCounter from './commentCounter.js';
+import addComment from './addComment.js';
 
+let itemID = 0;
+const textUsername = document.getElementById('username-text');
+const textComment = document.getElementById('comment-text');
 const commentPopup = document.querySelector('.comment-popup');
 const popup = document.querySelector('.popup');
 
@@ -25,14 +29,26 @@ const displayComments = async () => {
     }
     if (event.target.classList.contains('fa-comment')) {
       const dataComments = await getComments(event.target.id);
+      itemID = event.target.id;
       let commentText = '';
       commentPopup.innerText = '';
       for (let index = 0; index < dataComments.length; index += 1) {
         commentText = `${dataComments[index].creation_date} ${dataComments[index].username}: ${dataComments[index].comment}`;
         commentPopup.innerHTML += `<p>${commentText}</p>`;
+        textUsername.value = '';
+        textComment.value = '';
         popup.style.display = 'block';
       }
       commentCounter();
+    }
+    if (
+      event.target.classList.contains('cmt-btn') &&
+      textUsername.value &&
+      textComment.value
+    ) {
+      await addComment(itemID, textUsername.value, textComment.value);
+      textUsername.value = '';
+      textComment.value = '';
     }
   });
 };
