@@ -18,9 +18,12 @@ const displayShows = async () => {
       <div class="movie-info">
         <p class="movie-title">${movie['#TITLE']}</p>
         <div class="likes">
+         <span id= "like-button">
           <i class="fa-regular fa-heart fa-2xl"></i>
+          </span>
+          <span id="count-like">1</span>
           <i class="fa-regular fa-comment fa-2xl" id=${idCounter}></i>
-          <span id="count-like"></span>
+          
 
         </div>
         </div>
