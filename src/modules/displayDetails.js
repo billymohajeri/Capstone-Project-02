@@ -8,15 +8,21 @@ const displayDetails = async (index) => {
   const response = await fetch(`${API_URL}/?tt=${uniqueID}`);
   const data2 = await response.json();
   const movieImg = document.querySelector('.movie-poster');
-  movieImg.src = data2.short.image;
+  movieImg.src = data1.description[index - 1]['#IMG_POSTER'];
   const detailTitle = document.querySelector('.detail-title');
-  if (!detailTitle.innerHTML) detailTitle.innerHTML = data2.short.name;
+  detailTitle.innerHTML = data1.description[index - 1]['#TITLE'];
   const detailDirector = document.querySelector('.detail-director');
-  if (!detailDirector.innerHTML) { detailDirector.innerHTML = `Director: ${data2.short.director[0].name}`; }
+  if (data2.short.director === undefined) {
+    detailDirector.innerHTML = 'Director: No director available...';
+  } else {
+    detailDirector.innerHTML = `Director: ${data2.short.director[0].name}`;
+  }
   const detailStory = document.querySelector('.detail-story');
-  if (!detailStory.innerHTML) detailStory.innerHTML = data2.short.description;
+  detailStory.innerHTML = data2.short.description;
+  if (data2.short.description === undefined) {
+    detailStory.innerHTML = 'No story available...';
+  }
   const detailYear = document.querySelector('.detail-year');
-  if (!detailYear.innerHTML) { detailYear.innerHTML = `Year: ${data2.top.releaseYear.year}`; }
+  detailYear.innerHTML = `Year: ${data1.description[index - 1]['#YEAR']}`;
 };
-
 export default displayDetails;
