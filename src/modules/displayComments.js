@@ -5,6 +5,12 @@ import displayDetails from './displayDetails.js';
 
 let itemID = 0;
 
+const detailTitle = document.querySelector('.detail-title');
+const detailYear = document.querySelector('.detail-year');
+const detailDirector = document.querySelector('.detail-director');
+const detailStory = document.querySelector('.detail-story');
+const movieImg = document.querySelector('.movie-poster');
+
 const textUsername = document.getElementById('username-text');
 const textComment = document.getElementById('comment-text');
 const commentPopup = document.querySelector('.comment-popup');
@@ -29,6 +35,11 @@ const displayComments = async () => {
   document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('fa-xmark')) {
       popup.style.display = 'none';
+      detailTitle.innerHTML = '';
+      detailYear.innerHTML = '';
+      detailDirector.innerHTML = '';
+      detailStory.innerHTML = '';
+      movieImg.src = '';
     }
     if (event.target.classList.contains('fa-comment')) {
       const dataComments = await getComments(event.target.id);
