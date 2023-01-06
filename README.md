@@ -74,7 +74,7 @@ In this project, My partner and I recreated a simple wireframe template for a Mo
 
 ## 📺 Presentation <a name="video-link"></a>
 
-[Presentation about this project]()
+[Presentation about this project](https://drive.google.com/file/d/1hF0MsWRuWlcS675bkk-NotW1CzaY-anz/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,12 +180,6 @@ If you like this project, you can support me by giving a ⭐.
 <!-- > Give credit to everyone who inspired your codebase. -->
 
 I would like to thank all of my code reviewers for giving me constructive feedback.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📺 Presentation <a name="presentation"></a>
-
-[Presentation about this project](https://drive.google.com/file/d/1hF0MsWRuWlcS675bkk-NotW1CzaY-anz/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
