@@ -19,15 +19,15 @@
       <section class="item-count"></section>
       <section class="movies"></section>
       <section class="popup">
-        <section class="comment-popup">
-          <img src="" alt="">
-          <h1 class="movie-title"></h1>
-          <h4 class="movie-director"></h4>
-          <h4 class="movie-year"></h4>
-          <h4 class="movie-year"></h4>
-          <p class="movie-actors"></p>
-          
+        <section class="details">
+          <img src="" alt="" class="movie-poster" />
+          <h3 class="detail-title"></h3>
+          <h4 class="detail-year"></h4>
+          <h4 class="detail-director"></h4>
+          <span class="detail-story"></span>
+          <hr />
         </section>
+        <section class="comment-popup"></section>
         <section class="add-comment">
           <form action="">
             <h3>Add a comment</h3>
@@ -45,7 +45,12 @@
               placeholder="Your insights"
               required
             ></textarea>
-            <input type="button" value="Comment" id="comment-button" class="cmt-btn"/>
+            <input
+              type="button"
+              value="Comment"
+              id="comment-button"
+              class="cmt-btn"
+            />
           </form>
         </section>
       </section>
