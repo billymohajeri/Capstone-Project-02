@@ -5,8 +5,6 @@
   <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-<h3><b>---</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -33,9 +31,13 @@
 # StarWars Movies Collection <a name="about-project"></a>
 
 In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a webpack dev server.
+<div align="center">
 
-![](./app_screenshot/homepage.png)
-![](./app_screenshot/modal.png)
+  <img src="./app_screenshot/homepage.png" alt="logo" width="650"  height="auto" />
+  <img src="./app_screenshot/modal.png" alt="logo" width="250"  height="auto" />
+  
+  <br/>
+</div>
 
 ## 🛠 Built With <a name="built-with"></a>
 
