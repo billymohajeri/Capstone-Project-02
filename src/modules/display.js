@@ -13,8 +13,6 @@ const displayShows = async () => {
   data.description.forEach((movie) => {
     const id = movie['#IMDB_ID'];
     const { likes } = likesData.filter((like) => like.item_id === id)[0];
-    // console.log('likes');
-    // console.log(likes);
     const movieTiles = document.createElement('div');
     movieTiles.innerHTML = `
     <div class="movie-tiles" id="${id}">

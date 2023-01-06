@@ -15,7 +15,6 @@ const addLike = async (id) => {
     }),
   });
   const response = await result.text();
-  // console.log(response);
   return response;
 }
 
