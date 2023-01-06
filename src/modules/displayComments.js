@@ -1,8 +1,10 @@
 import { BASE_URL } from './utils.js';
 import commentCounter from './commentCounter.js';
 import addComment from './addComment.js';
+import displayDetails from './displayDetails.js';
 
 let itemID = 0;
+
 const textUsername = document.getElementById('username-text');
 const textComment = document.getElementById('comment-text');
 const commentPopup = document.querySelector('.comment-popup');
@@ -20,7 +22,8 @@ const displayComments = async () => {
     popupSection.innerHTML += '<i class="fa-solid fa-xmark fa-xl"></i>';
     const h2 = document.createElement('h2');
     h2.id = 'comments';
-    popupSection.prepend(h2);
+    const detailSec = document.querySelector('.details');
+    detailSec.after(h2);
   }
 
   document.addEventListener('click', async (event) => {
@@ -50,6 +53,7 @@ const displayComments = async () => {
       textUsername.value = '';
       textComment.value = '';
     }
+    await displayDetails(itemID);
   });
 };
 

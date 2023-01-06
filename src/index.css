@@ -79,14 +79,17 @@ a {
 
 .popup {
   width: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
   display: none;
   position: fixed;
-  top: 20%;
+  top: 10%;
   left: 25%;
   background-color: aliceblue;
   border-radius: 25px;
   text-align: center;
-  height: auto;
+  overflow-y: scroll;
+  height: 80%;
 }
 
 form {
@@ -111,4 +114,18 @@ input[type='button'] {
   margin-left: -40px;
   left: 100%;
   cursor: pointer;
+}
+
+.movie-poster {
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.details {
+  color: black;
+}
+
+hr {
+  width: 50%;
 }
