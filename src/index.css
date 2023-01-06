@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
   margin: 0;
   overflow-x: hidden;
   background-image: url('https://mcdn.wallpapersafari.com/medium/1/32/FpDfVZ.jpeg');
@@ -11,16 +12,19 @@ body {
 
 h1 {
   color: #ffd509;
+  margin-left: 5%;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .item-count {
   font-size: larger;
-  text-align: center;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  margin-top: -2%;
   color: white;
 }
 
@@ -33,7 +37,7 @@ h1 {
 .movie-tiles {
   text-align: center;
   width: 350px;
-  height: 600px;
+  height: 640px;
   border-radius: 10px;
   box-shadow:
     rgba(0, 0, 0, 0.25) 0 54px 55px,
@@ -43,6 +47,7 @@ h1 {
     rgba(0, 0, 0, 0.09) 0 -3px 5px;
   margin: 2.5px;
   padding-bottom: 5%;
+  margin-bottom: 10%;
   color: white;
   background-color: #1f1f50;
 }
@@ -77,6 +82,10 @@ a {
   cursor: pointer;
 }
 
+.fa-2xl:hover {
+  transform: scale(1.1);
+}
+
 .popup {
   width: 50%;
   padding-left: 4%;
@@ -103,10 +112,6 @@ textarea {
   margin: 20px;
 }
 
-input[type='button'] {
-  margin-bottom: 10px;
-}
-
 .fa-xmark {
   position: -webkit-sticky;
   position: sticky;
@@ -128,4 +133,15 @@ input[type='button'] {
 
 hr {
   width: 50%;
+}
+
+.cmt-btn {
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px;
+  height: 30px;
+  font-size: 1rem;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  margin-bottom: 20px;
 }
