@@ -4,11 +4,11 @@ import addComment from './addComment.js';
 import displayDetails from './displayDetails.js';
 // import { addLike } from './likes.js';
 let itemID = 0;
-// const detailTitle = document.querySelector('.detail-title');
-// const detailYear = document.querySelector('.detail-year');
-// const detailDirector = document.querySelector('.detail-director');
-// const detailStory = document.querySelector('.detail-story');
-// const movieImg = document.querySelector('.movie-poster');
+const detailTitle = document.querySelector('.detail-title');
+const detailYear = document.querySelector('.detail-year');
+const detailDirector = document.querySelector('.detail-director');
+const detailStory = document.querySelector('.detail-story');
+const movieImg = document.querySelector('.movie-poster');
 const popup = document.querySelector('.popup');
 const getComments = async (i) => {
   const response = await fetch(`${BASE_URL}/comments?item_id=item${i}`);
@@ -18,7 +18,7 @@ const getComments = async (i) => {
 const displayComments = async () => {
   const popupSection = document.querySelector('.popup');
   if (!popupSection.getElementsByTagName('h2').length) {
-    popupSection.innerHTML += '<i class="fa-solid fa-xmark fa-xl"></i>';
+    popupSection.innerHTML = `<i class="fa-solid fa-xmark fa-xl"></i>${popupSection.innerHTML}`;
     const h2 = document.createElement('h2');
     h2.id = 'comments';
     const detailSec = document.querySelector('.details');
@@ -53,7 +53,10 @@ const displayComments = async () => {
         commentText = `${dataComments[index].creation_date} ${dataComments[index].username}: ${dataComments[index].comment}`;
         commentPopup.innerHTML += `<p>${commentText}</p>`;
       }
-      commentCounter();
+      const p = popupSection.getElementsByTagName('p');
+      commentCounter(p);
+      const h2 = document.getElementById('comments');
+      h2.innerText = `Comments (${await commentCounter(p)})`;
     }
     if (
       event.target.classList.value === 'cmt-btn'
