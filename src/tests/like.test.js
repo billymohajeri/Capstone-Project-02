@@ -1,5 +1,6 @@
-import { getLikes, addLike } from '../likes.js';
-import { BASE_URL } from '../utils.js';
+/** * @jest-environment jsdom */
+import { getLikes, addLike } from '../modules/likes.js';
+import { BASE_URL } from '../modules/utils.js';
 
 describe('getLikes', () => {
   it('should return data from the /likes endpoint', async () => {

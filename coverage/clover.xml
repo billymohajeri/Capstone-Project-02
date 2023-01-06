@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1673030892086" clover="3.2.0">
-  <project timestamp="1673030892086" name="All files">
-    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="8" coveredelements="8" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+<coverage generated="1673047426305" clover="3.2.0">
+  <project timestamp="1673047426306" name="All files">
+    <metrics statements="15" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1" elements="18" coveredelements="10" complexity="0" loc="15" ncloc="15" packages="1" files="3" classes="3"/>
     <file name="commentCounter.js" path="D:\0 Microverse\2023-01-02 capstone project 02\Capstone-Project-02\src\modules\commentCounter.js">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="4" type="stmt"/>
-      <line num="5" count="4" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="18" type="stmt"/>
       <line num="6" count="4" type="stmt"/>
-      <line num="7" count="4" type="stmt"/>
-      <line num="9" count="18" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
+    </file>
+    <file name="likes.js" path="D:\0 Microverse\2023-01-02 capstone project 02\Capstone-Project-02\src\modules\likes.js">
+      <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+    </file>
+    <file name="utils.js" path="D:\0 Microverse\2023-01-02 capstone project 02\Capstone-Project-02\src\modules\utils.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
