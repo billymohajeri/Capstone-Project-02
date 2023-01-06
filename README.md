@@ -5,8 +5,6 @@
   <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-<h3><b>---</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -18,6 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🎥 Presentation](#video-link)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -29,38 +28,53 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 --- <a name="about-project"></a>
+# StarWars Movies Collection <a name="about-project"></a>
 
-**---** In this project...
+In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a webpack dev server.
+<div align="center">
+
+  <img src="./app_screenshot/homepage.png" alt="logo" width="650"  height="auto" />
+  <img src="./app_screenshot/modal.png" alt="logo" width="250"  height="auto" />
+  
+  <br/>
+</div>
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+# Major languages
+- HTML
+- CSS
+- JS
+- Jest
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li>HTML</li>
-    <li>JavaScript</li>
-    <li>CSS</li>
-    </ul>
-</details>
+## Technologies used: 
+- Webpack
+- VSCode
+- git
+-  GitHub
+- Gitflow
+- [Movies API](https://search.imdbot.workers.dev)
+- [Involvement API](https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/)
 
 <!-- Features -->
+### Key Features <a name="key-features"></a>
+- Like a movie
+- Create a comment for a movie
 
-<!-- ### Key Features <a name="key-features"></a>
-
-- **Responsive design for both Desktop and Mobile**
-- **Speaker section geerated dynamically via js**
-- **Designed with mobile first concept** -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+[Live Demo Link](https://billymohajeri.github.io/Capstone-Project-02/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📺 Presentation <a name="video-link"></a>
+
+[Presentation about this project](https://drive.google.com/file/d/1hF0MsWRuWlcS675bkk-NotW1CzaY-anz/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,89 +83,49 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps:
-
-```sh
-  git clone
-```
-
 ### Prerequisites
 
 In order to run this project you need:
 
 - Code Editor: VS Code
 - Web Browser
-<!--
-Example command:
+- Node
+- Git
+ ### Setup 
+- Clone the repository
+- Change directory into the project folder
 
-```sh
- gem install rails
-```
-
--->
-
-<!-- ### Setup -->
-
-<!-- Clone this repository to your desired folder: -->
-
-<!--
 Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:billymohajeri/Capstone-Project-02.git
+  cd Capstone-Project-02/
 ```
---->
 
-<!-- ### Install -->
+### Install 
 
-<!-- Install this project with: -->
+Install this project with: 
 
-<!--
 Example command:
 
-```sh
-  cd my-project
-  gem install
-```
---->
+``` npm install ```
 
-<!-- ### Usage
+ ### Usage
 
-To run the project, execute the following command: -->
+To run the project, execute the following command:
 
-<!--
+`npm run build`
+`npm start`
+
+ ### Run tests
+
+To run tests, run the following command: 
+
 Example command:
 
-```sh
-  rails server
-```
---->
+ `npm test` 
 
-<!-- ### Run tests
-
-To run tests, run the following command: -->
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-<!-- ### Deployment
-
-You can deploy this project using: -->
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+ <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- AUTHORS -->
 
@@ -165,16 +139,21 @@ Example:
 - Twitter: [@BillyMohajeri](https://twitter.com/BillyMohajeri)
 - LinkedIn: [@BillyMohajeri](https://www.linkedin.com/in/billymohajeri)
 
+👤 **Emmanuella Adu**
+- GitHub: [@elarhadu](https://github.com/elarhadu/)
+- Twitter: [@elarh_](https://twitter.com/elarh_)
+- LinkedIn: [Emmanuella Adu](https://www.linkedin.com/in/emmanuella-adu/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-<!-- ## 🔭 Future Features <a name="future-features"></a>
+ ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add a dynamic button for mobile version**
-- **Add form for reserve tickets** -->
+- Add a mobile version
+- Add a search for other movies or series options
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- CONTRIBUTING -->
 
@@ -204,27 +183,6 @@ I would like to thank all of my code reviewers for giving me constructive feedba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-<!-- ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2] -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- ## 📺 Presentation <a name="presentation"></a>
-
-[Presentation about this project](https://www.loom.com/share/506c91dd53a44229a9c31ec8c3f6a828) -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
@@ -234,4 +192,3 @@ This project is [MIT](./LICENSE/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._ -->
