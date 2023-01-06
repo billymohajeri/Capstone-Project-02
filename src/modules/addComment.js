@@ -23,4 +23,5 @@ const addComment = async (index, user, comment) => {
   }
   return true;
 };
+
 export default addComment;

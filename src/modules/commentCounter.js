@@ -4,4 +4,5 @@ const commentCounter = async () => {
   const p = popupSection.getElementsByTagName('p');
   h2.innerText = `Comments (${p.length})`;
 };
+
 export default commentCounter;
