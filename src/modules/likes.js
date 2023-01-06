@@ -1,32 +1,22 @@
 import { BASE_URL } from './utils.js';
 
-const likeButton=document.getElementsByClassName('fa-heart')
-const getLikes = async (i) => {
-    const response = await fetch(`${BASE_URL}/likes`);
-    const data = await response.json();
-    return data;
-  };
-
-const displayLikes = async () => {
-  document.addEventListener('click', async (event) => {
-      if (event.target.classList.contains('fa-heart')) {
-        likeButton.style.display = 'red';
-    //   console.log('hello');
-    }
-
-  });
+const getLikes = async () => {
+  const response = await fetch(`${BASE_URL}/likes`);
+  const data = await response.json();
+  return data;
 };
 
-export default displayLikes;
-
-const likeButton = document.querySelector('.like-button');
-console.log(likeButton);
-
-const getLikes = async () => {
-    const response = await fetch(`${BASE_URL}/likes`);
-    const data = await response.json();
-    console.log(data);
-    // return data
+const addLike = async (id) => {
+  const result = await fetch(`${BASE_URL}/likes`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      item_id: id,
+    }),
+  });
+  const response = await result.text();
+  // console.log(response);
+  return response;
 }
-getLikes();
 
+export { getLikes, addLike };
