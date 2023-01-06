@@ -2,10 +2,15 @@ body {
   box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
+  background-image: url('https://mcdn.wallpapersafari.com/medium/1/32/FpDfVZ.jpeg');
 }
 
 .logo {
   width: 10%;
+}
+
+h1 {
+  color: #ffd509;
 }
 
 .nav-bar {
@@ -16,6 +21,7 @@ body {
 .item-count {
   font-size: larger;
   text-align: center;
+  color: white;
 }
 
 .movies {
@@ -27,6 +33,7 @@ body {
 .movie-tiles {
   text-align: center;
   width: 350px;
+  height: 600px;
   border-radius: 10px;
   box-shadow:
     rgba(0, 0, 0, 0.25) 0 54px 55px,
@@ -46,12 +53,18 @@ body {
 
 footer {
   display: flex;
+  color: white;
   justify-content: center;
   align-items: center;
-  border: black 2px solid;
+  margin-top: 20px;
+  border: #ffd509 2px solid;
   position: absolute;
   width: 100%;
   height: 2.5rem;
+}
+
+a {
+  color: white;
 }
 
 .likes {
@@ -64,15 +77,34 @@ footer {
   cursor: pointer;
 }
 
-.comment-popup {
+.popup {
   width: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
   display: none;
   position: fixed;
-  top: 50%;
+  top: 10%;
   left: 25%;
   background-color: aliceblue;
   border-radius: 25px;
   text-align: center;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 50%;
+  margin: 20px;
+}
+
+input[type='button'] {
+  margin-bottom: 10px;
 }
 
 .fa-xmark {
@@ -82,4 +114,18 @@ footer {
   margin-left: -40px;
   left: 100%;
   cursor: pointer;
+}
+
+.movie-poster {
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.details {
+  color: black;
+}
+
+hr {
+  width: 50%;
 }
