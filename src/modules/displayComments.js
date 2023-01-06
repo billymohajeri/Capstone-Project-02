@@ -2,14 +2,14 @@ import { BASE_URL } from './utils.js';
 import commentCounter from './commentCounter.js';
 import addComment from './addComment.js';
 import displayDetails from './displayDetails.js';
-
+// import { addLike } from './likes.js';
 let itemID = 0;
-
-const textUsername = document.getElementById('username-text');
-const textComment = document.getElementById('comment-text');
-const commentPopup = document.querySelector('.comment-popup');
+// const detailTitle = document.querySelector('.detail-title');
+// const detailYear = document.querySelector('.detail-year');
+// const detailDirector = document.querySelector('.detail-director');
+// const detailStory = document.querySelector('.detail-story');
+// const movieImg = document.querySelector('.movie-poster');
 const popup = document.querySelector('.popup');
-
 const getComments = async (i) => {
   const response = await fetch(`${BASE_URL}/comments?item_id=item${i}`);
   const data = await response.json();
@@ -24,15 +24,6 @@ const displayComments = async () => {
     const detailSec = document.querySelector('.details');
     detailSec.after(h2);
   }
-  const popupSection = document.querySelector('.popup');
-  if (!popupSection.getElementsByTagName('h2').length) {
-    popupSection.innerHTML += '<i class="fa-solid fa-xmark fa-xl"></i>';
-    const h2 = document.createElement('h2');
-    h2.id = 'comments';
-    const detailSec = document.querySelector('.details');
-    detailSec.after(h2);
-  }
-
   document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('fa-xmark')) {
       // detailTitle.innerHTML = '';
@@ -56,9 +47,6 @@ const displayComments = async () => {
       for (let index = 0; index < dataComments.length; index += 1) {
         commentText = `${dataComments[index].creation_date} ${dataComments[index].username}: ${dataComments[index].comment}`;
         commentPopup.innerHTML += `<p>${commentText}</p>`;
-        textUsername.value = '';
-        textComment.value = '';
-        popup.style.display = 'block';
       }
       commentCounter();
     }
