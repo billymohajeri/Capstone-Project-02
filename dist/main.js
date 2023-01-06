@@ -156,7 +156,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _counter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./counter.js */ \"./src/modules/counter.js\");\n/* harmony import */ var _getShows_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getShows.js */ \"./src/modules/getShows.js\");\n\r\n\r\n\r\nconst displayShows = async () => {\r\n  const data = await (0,_getShows_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  const movieCount = new _counter_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\n  movieCount.setNumber(data.description.length);\r\n  const movies = document.querySelector('.movies');\r\n  movies.innerHTML = '';\r\n  let idCounter = 1;\r\n  data.description.forEach((movie) => {\r\n    const movieTiles = document.createElement('div');\r\n    movieTiles.innerHTML = `\r\n    <div class=\"movie-tiles\">\r\n      <div class=\"movie-image\">\r\n        <img src=\"${movie['#IMG_POSTER']}\" alt=\"movie poster\" />\r\n      </div>\r\n      <div class=\"movie-info\">\r\n        <p class=\"movie-title\">${movie['#TITLE']}</p>\r\n        <div class=\"likes\">\r\n          <i class=\"fa-regular fa-heart fa-2xl\"></i>\r\n          <i class=\"fa-regular fa-comment fa-2xl\" id=${idCounter}></i>\r\n          <span id=\"count-like\"></span>\r\n\r\n        </div>\r\n        </div>\r\n        </div>`;\r\n    idCounter += 1;\r\n    movies.appendChild(movieTiles);\r\n  });\r\n  const itemCount = document.querySelector('.item-count');\r\n  itemCount.innerHTML = `${data.description.length} movies are currently displaying`;\r\n  return data.description;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayShows);\r\n\n\n//# sourceURL=webpack://capstone-project-02/./src/modules/display.js?");
+=======
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _counter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./counter.js */ \"./src/modules/counter.js\");\n/* harmony import */ var _getShows_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getShows.js */ \"./src/modules/getShows.js\");\n/* harmony import */ var _likes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./likes.js */ \"./src/modules/likes.js\");\n\n\n\nconst displayShows = async () => {\n  const likesData = await (0,_likes_js__WEBPACK_IMPORTED_MODULE_2__.getLikes)();\n  const data = await (0,_getShows_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  const movieCount = new _counter_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n  movieCount.setNumber(data.description.length);\n  const movies = document.querySelector('.movies');\n  movies.innerHTML = '';\n  let idCounter = 1;\n  data.description.forEach((movie) => {\n    const id = movie['#IMDB_ID'];\n    const { likes } = likesData.filter((like) => like.item_id === id)[0];\n    const movieTiles = document.createElement('div');\n    movieTiles.innerHTML = `\n    <div class=\"movie-tiles\" id=\"${id}\">\n      <div class=\"movie-image\">\n        <img src=\"${movie['#IMG_POSTER']}\" alt=\"movie poster\" />\n      </div>\n      <div class=\"movie-info\">\n        <p class=\"movie-title\">${movie['#TITLE']}</p>\n        <div class=\"likes\">\n        <span class=\"count-like\" id=\"2${id}\">${likes}</span>\n          <i class=\"fa-regular fa-heart fa-2xl\"></i>\n          <i class=\"fa-regular fa-comment fa-2xl\" id=${idCounter}></i>\n          <span id=\"count-like\"></span>\n        </div>\n        </div>\n        </div>`;\n    idCounter += 1;\n    movies.appendChild(movieTiles);\n  });\n  const itemCount = document.querySelector('.item-count');\n  itemCount.innerHTML = `${data.description.length} movies are currently displaying`;\n  return data.description;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayShows);\n\n//# sourceURL=webpack://capstone-project-02/./src/modules/display.js?");
+>>>>>>> 6eaced55ecdc097a32c58a020d71ab94dc0b6410
 
 /***/ }),
 
@@ -190,13 +194,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/modules/likes.js":
+/*!******************************!*\
+  !*** ./src/modules/likes.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addLike\": () => (/* binding */ addLike),\n/* harmony export */   \"getLikes\": () => (/* binding */ getLikes)\n/* harmony export */ });\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils.js */ \"./src/modules/utils.js\");\n\nconst getLikes = async () => {\n  const response = await fetch(`${_utils_js__WEBPACK_IMPORTED_MODULE_0__.BASE_URL}/likes`);\n  const data = await response.json();\n  return data;\n};\nconst addLike = async (id) => {\n  const result = await fetch(`${_utils_js__WEBPACK_IMPORTED_MODULE_0__.BASE_URL}/likes`, {\n    method: 'POST',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify({\n      item_id: id,\n    }),\n  });\n  const response = await result.text();\n  return response;\n};\n\n\n//# sourceURL=webpack://capstone-project-02/./src/modules/likes.js?");
+
+/***/ }),
+
 /***/ "./src/modules/utils.js":
 /*!******************************!*\
   !*** ./src/modules/utils.js ***!
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"API_URL\": () => (/* binding */ API_URL),\n/* harmony export */   \"BASE_URL\": () => (/* binding */ BASE_URL)\n/* harmony export */ });\nconst API_URL = 'https://search.imdbot.workers.dev';\n// const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/oQGl1Z1V3svKwIwJOQti';\nconst BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/LPdZEs67fBtYxfX1CsPu';\n\n\n\n//# sourceURL=webpack://capstone-project-02/./src/modules/utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"API_URL\": () => (/* binding */ API_URL),\n/* harmony export */   \"BASE_URL\": () => (/* binding */ BASE_URL)\n/* harmony export */ });\nconst API_URL = 'https://search.imdbot.workers.dev';\nconst BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/LPdZEs67fBtYxfX1CsPu';\n\n\n//# sourceURL=webpack://capstone-project-02/./src/modules/utils.js?");
 
 /***/ })
 
