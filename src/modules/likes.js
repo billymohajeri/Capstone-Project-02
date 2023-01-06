@@ -16,6 +16,6 @@ const addLike = async (id) => {
   });
   const response = await result.text();
   return response;
-}
+};
 
 export { getLikes, addLike };
