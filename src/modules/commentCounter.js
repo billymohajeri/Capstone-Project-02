@@ -1,8 +1,9 @@
-const commentCounter = async () => {
-  const popupSection = document.querySelector('.popup');
-  const h2 = document.getElementById('comments');
-  const p = popupSection.getElementsByTagName('p');
-  h2.innerText = `Comments (${p.length})`;
+const commentCounter = async (p) => {
+  let count = 0;
+  for (let index = 0; index < p.length; index += 1) {
+    count += 1;
+  }
+  return count;
 };
 
 export default commentCounter;
