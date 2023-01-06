@@ -56,10 +56,8 @@ In this project, My partner and I recreated a simple wireframe template for a Mo
 
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
-
-- **Responsive design for both Desktop and Mobile**
-- **Speaker section geerated dynamically via js**
-- **Designed with mobile first concept** -->
+- Like a movie
+- Create a comment for a movie
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
