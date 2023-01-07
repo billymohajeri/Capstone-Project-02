@@ -339,7 +339,6 @@
     "isarray": "^0.0.1",
     "isexe": "^2.0.0",
     "jake": "^10.8.5",
-    "jest-environment-jsdom": "^29.3.1",
     "jest-worker": "^27.5.1",
     "js-library-detector": "^6.5.0",
     "js-tokens": "^4.0.0",

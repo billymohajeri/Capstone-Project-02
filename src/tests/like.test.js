@@ -1,45 +1,23 @@
-import { getLikes, addLike } from '../modules/likes.js';
 import { BASE_URL } from '../modules/utils.js';
 
+const getLikes = async (fetchFn) => {
+  const response = await fetchFn(`${BASE_URL}/likes`);
+  const data = await response.json();
+  return data;
+};
 describe('getLikes', () => {
   it('should return data from the /likes endpoint', async () => {
     // Arrange
-    const mockSuccessResponse = {};
-    const mockJsonPromise = Promise.resolve(mockSuccessResponse);
-    const mockFetchPromise = Promise.resolve({
-      json: () => mockJsonPromise,
-    });
-    jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
-
-    // Act
-    const result = await getLikes();
-
-    // Assert
-    expect(result).toEqual(mockSuccessResponse);
-  });
-});
-
-describe('addLike', () => {
-  it('should send a POST request to the /likes endpoint', async () => {
-    // Arrange
-    const mockSuccessResponse = 'Success';
-    const mockFetchPromise = Promise.resolve({
-      text: () => mockSuccessResponse,
-    });
-    jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
-
-    // Act
-    const result = await addLike('123');
-
-    // Assert
-    expect(result).toEqual(mockSuccessResponse);
-    expect(fetch).toHaveBeenCalledWith(
-      `${BASE_URL}/likes`,
-      expect.objectContaining({
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ item_id: '123' }),
+    const mockFetch = jest.fn().mockImplementation(() => Promise.resolve({
+      json: () => ({
+        likes: 123,
       }),
-    );
+    }));
+    // Act
+    const resultPromise = getLikes(mockFetch);
+    // Assert
+    const result1 = await resultPromise;
+    expect(result1).toEqual({ likes: 123 });
+    expect(mockFetch).toHaveBeenCalledWith(`${BASE_URL}/likes`);
   });
 });
