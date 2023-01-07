@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>
@@ -31,6 +31,7 @@
 # StarWars Movies Collection <a name="about-project"></a>
 
 In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a webpack dev server.
+
 <div align="center">
 
   <img src="./app_screenshot/homepage.png" alt="logo" width="650"  height="auto" />
@@ -42,27 +43,32 @@ In this project, My partner and I recreated a simple wireframe template for a Mo
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 # Major languages
+
 - HTML
 - CSS
 - JS
 - Jest
 
-## Technologies used: 
+## Technologies used:
+
 - Webpack
 - VSCode
 - git
--  GitHub
+- GitHub
 - Gitflow
 - [Movies API](https://search.imdbot.workers.dev)
 - [Involvement API](https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/)
 
 <!-- Features -->
+
 ### Key Features <a name="key-features"></a>
+
 - Like a movie
 - Create a comment for a movie
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
@@ -83,6 +89,7 @@ In this project, My partner and I recreated a simple wireframe template for a Mo
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps:
+
 ### Prerequisites
 
 In order to run this project you need:
@@ -91,7 +98,9 @@ In order to run this project you need:
 - Web Browser
 - Node
 - Git
- ### Setup 
+
+### Setup
+
 - Clone the repository
 - Change directory into the project folder
 
@@ -102,30 +111,30 @@ Example commands:
   cd Capstone-Project-02/
 ```
 
-### Install 
+### Install
 
-Install this project with: 
+Install this project with:
 
 Example command:
 
-``` npm install ```
+`npm install`
 
- ### Usage
+### Usage
 
 To run the project, execute the following command:
 
 `npm run build`
 `npm start`
 
- ### Run tests
+### Run tests
 
-To run tests, run the following command: 
+To run tests, run the following command:
 
 Example command:
 
- `npm test` 
+`npm test`
 
- <p align="right">(<a href="#readme-top">back to top</a>)</p> 
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -140,20 +149,21 @@ Example command:
 - LinkedIn: [@BillyMohajeri](https://www.linkedin.com/in/billymohajeri)
 
 👤 **Emmanuella Adu**
+
 - GitHub: [@elarhadu](https://github.com/elarhadu/)
-- Twitter: [@elarh_](https://twitter.com/elarh_)
+- Twitter: [@elarh\_](https://twitter.com/elarh_)
 - LinkedIn: [Emmanuella Adu](https://www.linkedin.com/in/emmanuella-adu/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
- ## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
 - Add a mobile version
 - Add a search for other movies or series options
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -183,7 +193,6 @@ I would like to thank all of my code reviewers for giving me constructive feedba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
@@ -191,4 +200,3 @@ I would like to thank all of my code reviewers for giving me constructive feedba
 This project is [MIT](./LICENSE/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-

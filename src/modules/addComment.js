@@ -17,7 +17,9 @@ const addComment = async (index, user, comment) => {
     });
     const data = await response.text();
     if (data) {
-      window.location.reload();
+      const commentText = `<p>Just now ${user} said: ${comment}</p>`;
+      const commentPopup = document.querySelector('.comment-popup');
+      commentPopup.innerHTML += `<p>${commentText}</p>`;
     }
     return data || null;
   }

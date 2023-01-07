@@ -2,7 +2,7 @@ import { BASE_URL } from './utils.js';
 import commentCounter from './commentCounter.js';
 import addComment from './addComment.js';
 import displayDetails from './displayDetails.js';
-// import { addLike } from './likes.js';
+
 let itemID = 0;
 const detailTitle = document.querySelector('.detail-title');
 const detailYear = document.querySelector('.detail-year');
@@ -26,11 +26,6 @@ const displayComments = async () => {
   }
   document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('fa-xmark')) {
-      // detailTitle.innerHTML = '';
-      // detailYear.innerHTML = '';
-      // detailDirector.innerHTML = '';
-      // detailStory.innerHTML = '';
-      // movieImg.src = '';
       popup.style.display = 'none';
       detailTitle.innerHTML = '';
       detailYear.innerHTML = '';

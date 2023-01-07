@@ -1,4 +1,3 @@
-/** * @jest-environment jsdom */
 import { getLikes, addLike } from '../modules/likes.js';
 import { BASE_URL } from '../modules/utils.js';
 
