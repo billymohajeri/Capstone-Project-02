@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./logo.png" alt="logo" width="250"  height="auto" />
   <br/>
 
 </div>
