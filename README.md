@@ -102,7 +102,7 @@ In order to run this project you need:
 ### Setup
 
 - Clone the repository
-- Change directory into the project folder
+- Change the directory into the project folder
 
 Example commands:
 
@@ -139,8 +139,6 @@ Example command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-<!-- > Mention all of the collaborators of this project. -->
 
 👤 **Billy Mohajeri**
 
