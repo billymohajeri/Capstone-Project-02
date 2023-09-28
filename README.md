@@ -30,7 +30,7 @@
 
 # StarWars Movies Collection <a name="about-project"></a>
 
-In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a webpack dev server.
+In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a Webpack dev server.
 
 <div align="center">
 
@@ -185,9 +185,7 @@ If you like this project, you can support me by giving a ⭐.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-<!-- > Give credit to everyone who inspired your codebase. -->
-
-I would like to thank all of my code reviewers for giving me constructive feedback.
+We want to thank all of our code reviewers for giving us constructive feedback.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
