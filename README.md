@@ -30,11 +30,12 @@
 
 # StarWars Movies Collection <a name="about-project"></a>
 
-In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using webpack, fetching data from APIs and serving it by a Webpack dev server.
+In this project, My partner and I recreated a simple wireframe template for a Movie Site. This simple web page was built using Webpack, fetching data from APIs and serving it by a Webpack dev server.
 
 <div align="center">
 
   <img src="./app_screenshot/homepage.png" alt="logo" width="650"  height="auto" />
+  <br/>
   <img src="./app_screenshot/modal.png" alt="logo" width="250"  height="auto" />
   
   <br/>
